@@ -1,7 +1,7 @@
 # MultiGlobAl: global alignment of multilayer networks
 MultiGlobAl is a software tool for the Pairwise Global Network Alignment (PGNA) of Multilayer Networks.
 
-We compiled it (via Nuitka, https://nuitka.net) for macOS, Linux, Windows.
+We C-compiled it (via Nuitka, https://nuitka.net) for macOS, Linux, and Windows.
 
 
 ## 1. Installation
@@ -22,13 +22,9 @@ Alternatively, dependencies can be installed via [Python Package Installer (pip)
 python3 setup.py install
 ```
 
-or (alias: python, python3):
+(or its alias 'python', if available).
 
-```
-python setup.py install
-```
-
-ONLY FOR LINUX: setup.py will install 'python3-tk', thus we suggest to execute the it with 'sudo'.
+ONLY FOR LINUX: setup.py will install 'python3-tk', thus we suggest executing it with 'sudo'.
 
 
 ### 1.2. requirements.txt
@@ -37,11 +33,7 @@ ONLY FOR LINUX: setup.py will install 'python3-tk', thus we suggest to execute t
 pip3 install -r requirements.txt
 ```
 
-or (alias: pip, pip3):
-
-```
-pip install -r requirements.txt
-```
+(or its alias 'pip', if available).
 
 ONLY FOR LINUX: You must also install 'python3-tk':
 
@@ -68,11 +60,7 @@ chmod +x MultiGlobAl
 ./MultiGlobAl [-h] -s SOURCE -t TARGET [-sm SIMILARITY_MATRIX] -o OUTPUT
 ```
 
-To show the help message, you can execute -h (or --help):
-
-```
-./MultiGlobAl -h
-```
+To show the help message, you can use -h (or --help).
 
 <br />
 
