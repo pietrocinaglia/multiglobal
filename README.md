@@ -1,17 +1,37 @@
 # MultiGlobAl: global alignment of multilayer networks
 MultiGlobAl is a software tool for the Pairwise Global Network Alignment (PGNA) of Multilayer Networks.
 
-It was C-compiled via Nuitka (https://nuitka.net).
-
-The executable supports macOS and Unix-like OS.
-We tested MultiGlobAl on macOS (v.13, Apple M1) with Python v3.10 and v3.11. Contact us for other OS.
+We compiled it (via Nuitka, https://nuitka.net) for macOS, Linux, Windows.
 
 
-## Requirements
-MultiGlobAl needs Python 3.11 (or later), as well as the dependencies listed in 'requirements.txt'.
+## 1. Installation
+
+MultiGlobAl needs Python3 and the dependencies listed in 'requirements.txt'.
+
+It has been tested on the following O.S.:
+- macOS (Ventura 13.5, Apple M1), Python v3.11.
+- Linux (Ubuntu, AMD64), Python v3.10.
+- Windows 11 (AMD64), Python v3.11.
+
+Dependencies can be installed by using a ready-to-use setup (see 1.1).
+
+Alternatively, dependencies can be installed via [Python Package Installer (pip)](https://pip.pypa.io/en/stable/), by using 'requirements.txt' (see 1.2).
+
+### 1.1. setup.py
+```
+python3 setup.py install
+```
+
+or (alias: python, python3):
+
+```
+python setup.py install
+```
+
+ONLY FOR LINUX: setup.py will install 'python3-tk', thus we suggest to execute the it with 'sudo'.
 
 
-Dependencies may be installed via [Python Package Installer (pip)](https://pip.pypa.io/en/stable/):
+### 1.2. requirements.txt
 
 ```
 pip3 install -r requirements.txt
@@ -22,21 +42,28 @@ or (alias: pip, pip3):
 ```
 pip install -r requirements.txt
 ```
+
+ONLY FOR LINUX: You must also install 'python3-tk':
+
+```
+sudo apt-get install python3-tk
+```
+
 <br />
 
-## MultiGlobAl use
+## 2. MultiGlobAl use
 
-### Via GUI
+### 2.1 Via GUI
 
 - Double Click on 'MultiGlobAl' file.
 
-You can set the execute permission on the file as follows (if needed):
+ONLY FOR macOS and LINUX: You may need to set execute permissions for the executable.:
 
 ```
 chmod +x MultiGlobAl 
 ```
 
-### Via Shell
+### 2.2. Via Shell
 ```
 ./MultiGlobAl [-h] -s SOURCE -t TARGET [-sm SIMILARITY_MATRIX] -o OUTPUT
 ```
