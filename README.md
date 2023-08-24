@@ -1,7 +1,7 @@
 # MultiGlobAl: global alignment of multilayer networks
 MultiGlobAl is a software tool for the Pairwise Global Network Alignment (PGNA) of Multilayer Networks.
 
-We C-compiled it (via Nuitka, https://nuitka.net) for macOS, Linux, and Windows.
+We C-compiled it (via Nuitka, https://nuitka.net) for macOS, Linux, and Windows. Sources are available in '/src' folder.
 
 
 ## 1. Installation
